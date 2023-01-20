@@ -24,3 +24,7 @@ google API to show the locations mentioned in a book, or create a node connectio
 This is also a chance for me to build a project using an Agile approach, where I first plan out what I want, plan out the features and make timelines and 
 program the app in iterations, creating a release after each iteration. I will most likely perform a release after each major feature completed.
 
+I also want to encorporate Test Driven Development, writing tests after small functions are created and making sure features are fully tested before moving to the next feature. This will help better document the code, provide reassurance there are no bugs in the code and make it easier to spot bugs.
+
+
+
