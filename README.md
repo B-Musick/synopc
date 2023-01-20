@@ -12,7 +12,7 @@ other peoples knowledge gained from the book and what they found most important.
 can help readers reflect on how they read and learn new ways to gain information from 
 what they read.
 
-# What This Project Is To Me
+# What I Am Accomplishing With This Project 
 This project is a way for me to learn a new programming language (PHP), and hone the skills 
 and knowledge I already have with SQL and apply it to a web based project. 
 
