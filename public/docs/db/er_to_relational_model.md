@@ -82,7 +82,7 @@ CREATE TABLE Location(
 
 ### Character(cID, description, gender, first_name, last_name)
 ```
-CREATE TABLE Location(
+CREATE TABLE Character(
     cID INTEGER NOT NULL,
     description CHAR(20),
     gender CHAR(20),
