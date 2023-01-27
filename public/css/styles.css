@@ -1,0 +1,170 @@
+/* CSS
+
+1: Core styles
+2: Typography
+3: Header and footer
+4: Layout
+5: Forms + pagination
+7: Admin
+7: Icons
+
+Blue  295073
+Rust  a62d2d
+Yellow  f29f05
+Red   f23838
+*/
+
+/**********************/
+/* 1:   CORE STYLES   */
+/**********************/
+
+html,
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/****************************/
+/* 2:   HEADER AND FOOTER   */
+/****************************/
+.wrapper{
+    position: relative;
+    height: 200vh;
+}
+.header-footer-container{
+    background-color: rgb(63, 119, 188);
+}
+
+#nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color:white;
+    margin: 0;
+    position: relative;
+}
+li{
+    width: 100%;
+}
+a{
+    margin:0;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+}
+#footer{
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgb(63, 119, 188);
+}
+
+/********************/
+/* 3:   INDEX.PHP   */
+/********************/
+#main-section{
+    height: 100vh;
+    position: relative;
+
+}
+
+#main-user-section{
+    /* This section contains the user login, registration buttons and a description of the site */
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../uploads/index_bckgnd.jpg');
+        filter: brightness(125%);
+}
+
+#main-user-section-header {
+    color: white;
+    text-align: center;
+    padding-top: 10em;
+}
+
+#main-user-section-header-title {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#main-user-section-header-title span {
+    font-size: 50px;
+}
+
+#main-user-section-header-description {
+    font-family: 'Cookie', cursive;
+    font-size: 30px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.button-container button {
+    all: unset;
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(63, 119, 188);
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#main-user-section-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+/* About Section CSS */
+#about-section{
+    background-color: rgba(208, 177, 200, 0.554);
+    height: 100vh;
+    width: 100%;
+        /* Footer height */
+}
+
+.about-section-item{
+    height: 33.3%;
+    display: flex;
+}
+
+.about-section-item-inner{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section-icon{
+    font-size: 2.5em !important;
+}
+
+
+#about-section-character-icon {
+
+}
+
+#about-section-character-description{
+
+}
+
+/*****
+5. Forms
+******/
+.form-error-message{
+    color: red;
+    padding-left: 1em;
+}
+
+.form-input-container{
+    display: flex; /* Want error message to show up beside input*/
+}
