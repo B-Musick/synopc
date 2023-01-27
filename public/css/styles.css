@@ -168,3 +168,57 @@ a{
 .form-input-container{
     display: flex; /* Want error message to show up beside input*/
 }
+
+.form-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container form {
+    width: 300px;
+    background-color: rgb(180, 187, 189);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-input {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+.form-input input {
+    height: 30px;
+    width: 170px;
+    margin-bottom: 5px;
+    border: 2px solid gray;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.form-input label {
+    padding-top: 5px;
+}
+
+#register-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+button {
+    all: unset;
+    color: white;
+    justify-self: center;
+    width: 250px;
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(63, 119, 188);
+    padding: 5px;
+    border-radius: 5%;
+
+}

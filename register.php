@@ -57,28 +57,40 @@
 ?>
 
 <?php include 'includes/header.php'; ?>
-    <div id="form-container">
+    <div class="form-container">
         <form action="./register.php" method="POST">
-            <p>first name: <input type="text" name="first_name" value="<?= htmlspecialchars($user_input['first_name']) ?>"> </p>
-            <span class="error"><?= $error_msg['first_name'] ?></span><br>
-            
-            <p>last name:      <input type="text" name="last_name" value="<?= htmlspecialchars($user_input['last_name']) ?>"></p>
-            <span class="error"><?= $error_msg['last_name'] ?></span><br>
-        
-            <p>email:    <input type="text" name="email" value="<?= htmlspecialchars($user_input['email'])?>"></p>
-            <span class="error"><?= $error_msg['email'] ?></span><br>
+            <div class="form-input">
+                <p>first name: <input type="text" name="first_name" value="<?= htmlspecialchars($user_input['first_name']) ?>"> </p>
+                <span class="error"><?= $error_msg['first_name'] ?></span><br>
+            </div>
 
-            <p>age:    <input type="text" name="age" value="<?=htmlspecialchars($user_input['age'])?>"></p>
-            <span class="error"><?= $error_msg['age'] ?></span><br>
+            <div class="form-input">
+                <p>last name:      <input type="text" name="last_name" value="<?= htmlspecialchars($user_input['last_name']) ?>"></p>
+                <span class="error"><?= $error_msg['last_name'] ?></span><br>
+            </div>
 
-            <p>password: <input type="password" name="password" value="<?= htmlspecialchars($user_input['password'])?>"></p>
-            <span class="error"><?= $error_msg['password'] ?></span><br>
+            <div class="form-input">
+                <p>email:    <input type="text" name="email" value="<?= htmlspecialchars($user_input['email'])?>"></p>
+                <span class="error"><?= $error_msg['email'] ?></span><br>
+            </div>
 
-            <p><input type="checkbox" name="agreement" value="true" <?= $agreement ? 'checked':''?> > 
+            <div class="form-input">
+                <p>age:    <input type="text" name="age" value="<?=htmlspecialchars($user_input['age'])?>"></p>
+                <span class="error"><?= $error_msg['age'] ?></span><br>
+            </div>
 
-            I agree to the terms and conditions.</p>
-            <span class="error"><?= $error_msg['agreement'] ?></span><br>
-            <p><input type="submit" value="Save"></p>
+            <div class="form-input">
+                <p>password: <input type="password" name="password" value="<?= htmlspecialchars($user_input['password'])?>"></p>
+                <span class="error"><?= $error_msg['password'] ?></span><br>
+            </div>
+
+            <div class="form-input">
+                <p><input type="checkbox" name="agreement" value="true" <?= $agreement ? 'checked':''?> > 
+                I agree to the terms and conditions.</p>
+                <span class="error"><?= $error_msg['agreement'] ?></span><br>
+            </div>
+
+            <button>submit</button>
         </form>
     </div>
 <?php include 'includes/footer.php'; ?>
