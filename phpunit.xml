@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit colors="true" stopOnFailure="false" bootstrap="vendor/autoload.php">
+<phpunit colors="true" stopOnFailure="false" bootstrap="vendor/autoload.php" cacheResults="true">
+<!-- Set cacheResults false if dont want the cache file -->
     <testsuites>
         <testsuite name="Tests">
             <directory>tests</directory>
